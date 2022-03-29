@@ -29,7 +29,7 @@ show_downloads: true
 
 
 # equipment
-![cage](./imgs/equipmentAll)
+![cage](./imgs/equipmentAll.png)
 Out cpature setups.
 <br>
 
