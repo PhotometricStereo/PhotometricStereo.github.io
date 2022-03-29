@@ -11,20 +11,36 @@ show_downloads: true
 
 
 # Datatset
-100 objects with 10 shapes-by-10 materials<br>
-| Shapes       | Materials         |
-|:-------------|:------------------|
-| Ball         | Pom               |
-| Golf         | Pp                |   
-| Spike        | Nylon             |
-| Nut          | Pvc               |
-| Square       | Abs               |
-| Pentagon     | Bakelite          |
-| Hexagon      | Algood            |
-| Propeller    | Cugood            |
-| Turbine      | Steel             |
-| Bunny        | Acrlyic           |
-
+100 objects matrix with 10 shapes-by-10 materials<br>
+<table>
+  <tr>
+    <th>Shapes</th>
+    <th>Ball</th>
+    <th>Golf</th>
+    <th>Spike</th>
+    <th>Nut</th>
+    <th>Square</th>
+    <th>Pentagon</th>
+    <th>Hexagon</th>
+    <th>Propeller</th>
+    <th>Turbine</th>
+    <th>Bunny</th>
+  </tr>
+    
+  <tr>
+    <td>Materials</td>
+      <td>Pom</td>
+      <td>Pp</td>
+      <td>Nylon</td>
+      <td>Pvc</td>
+      <td>Abs</td>
+      <td>Bakelite</td>
+      <td>Al</td>
+      <td>Cu</td>
+      <td>Steel</td>
+      <td>Acylic</td>
+  </tr>
+</table>
 
 
 
