@@ -11,7 +11,21 @@ show_downloads: true
 
 
 # Datatset
-100 objects with 10 shapes-by-10 materials
+100 objects with 10 shapes-by-10 materials<br>
+| Shapes       | Materials         |
+|:-------------|:------------------|
+| Ball         | Pom               |
+| Golf         | Pp                |   
+| Spike        | Nylon             |
+| Nut          | Pvc               |
+| Square       | Abs               |
+| Pentagon     | Bakelite          |
+| Hexagon      | Algood            |
+| Propeller    | Cugood            |
+| Turbine      | Steel             |
+| Bunny        | Acrlyic           |
+
+
 
 
 # equipment
@@ -21,7 +35,7 @@ Out cpature setups.
 
 
 ## results
-
+![heatmap](./imgs/heatmap.png)
 curve map
 heatmap
 <br>
@@ -30,10 +44,10 @@ heatmap
 
 
 ## Files
-*Paper([PDF](./imgs/pdfs/00793.pdf)
-*Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
-*Dataset <a href="{{1.2.3.4/dataset/xxx.zip}}" class="btn">Download .zip</a> 
-*([Datset.zip](1.2.3.4/dataset/xxx.zip))
+- Paper([PDF](./imgs/pdfs/00793.pdf)
+- Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
+- Dataset <a href="{{1.2.3.4/dataset/xxx.zip}}" class="btn">Download .zip</a> 
+- ([Datset.zip](1.2.3.4/dataset/xxx.zip))
 <br/><br/><br/><br/>
 
 
