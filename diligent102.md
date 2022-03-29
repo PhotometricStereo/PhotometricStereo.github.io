@@ -15,7 +15,7 @@ show_downloads: true
 100 objects matrix with 10 shapes-by-10 materials<br>
 <table>
   <tr>
-    <th>Shapes</th>
+    <th><font color="dodgerblue">Shapes</font></th>
     <th>Ball</th>
     <th>Golf</th>
     <th>Spike</th>
@@ -28,7 +28,7 @@ show_downloads: true
     <th>Bunny</th>
   </tr>
   <tr>
-      <th>Materials</th>
+      <th><font color="dodgerblue">Materials</font></th>
       <th>Pom</th>
       <th>Pp</th>
       <th>Nylon</th>
@@ -46,14 +46,15 @@ show_downloads: true
 
 # Equipment
 ![cage](./imgs/equipmentAll.png)
-Out cpature setups.
+- Dark specular balls for calibration "on the fly";
+- Omnidirectional illumination stage;
+- Darkroom cage;
 <br><br>
 
 
 ## Results
 ![heatmap](./imgs/heatmap.png)
-curve map
-heatmap
+A 10×10 shape-material error distribution matrix is visualized to depict a “portrait” for each evaluated method.
 <br><br>
 
 
@@ -84,7 +85,7 @@ heatmap
 
 
 ## Authors
-[Jieji Ren](), [FeiShi Wang](), [Jiahao Zhang](), [Qian Zheng](), [Mingjun Ren](), [Boxing Shi]()
+[Jieji Ren]()   [FeiShi Wang]()   [Jiahao Zhang]()    [Qian Zheng](https://q-zh.github.io)    [Mingjun Ren](https://me.sjtu.edu.cn/teacher_directory1/renmingjun.html)   [Boxing Shi](https://ci.idm.pku.edu.cn/People.htm)
 
 
 
