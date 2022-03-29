@@ -28,17 +28,17 @@ show_downloads: true
     <th>Bunny</th>
   </tr>
   <tr>
-      <th>Materials</td>
-      <th>Pom</td>
-      <th>Pp</td>
-      <th>Nylon</td>
-      <th>Pvc</td>
-      <th>Abs</td>
-      <th>Bakelite</td>
-      <th>Al</td>
-      <th>Cu</td>
-      <th>Steel</td>
-      <th>Acylic</td>
+      <th>Materials</th>
+      <th>Pom</th>
+      <th>Pp</th>
+      <th>Nylon</th>
+      <th>Pvc</th>
+      <th>Abs</th>
+      <th>Bakelite</th>
+      <th>Al</th>
+      <th>Cu</th>
+      <th>Steel</th>
+      <th>Acylic</th>
   </tr>
 </table>
 <br><br>
@@ -63,7 +63,7 @@ heatmap
 - Paper([PDF](./imgs/pdfs/00793.pdf))
 - Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
 - Dataset([DownLoad.zip](1.2.3.4/dataset/xxx.zip))
-- [<font color="dodgerblue">Evaluation WebSite</font>](http://120.27.211.155:8501)
+- [<font color="dodgerblue">Evaluation WebSite</font>](http://120.27.211.155)
 <br/><br/>
 
 
