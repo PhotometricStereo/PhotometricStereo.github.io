@@ -85,7 +85,7 @@ A 10×10 shape-material error distribution matrix is visualized to depict a “p
 
 
 ## Authors
-[Jieji Ren]()     [FeiShi Wang]()     [Jiahao Zhang]()      [Qian Zheng](https://q-zh.github.io)      [Mingjun Ren^*](https://me.sjtu.edu.cn/teacher_directory1/renmingjun.html)     [Boxing Shi^*](https://ci.idm.pku.edu.cn/People.htm)
+[Jieji Ren]()     &nbsp;&nbsp;[FeiShi Wang]()     &nbsp;&nbsp;[Jiahao Zhang]()      &nbsp;&nbsp;[Qian Zheng](https://q-zh.github.io)      &nbsp;&nbsp;[Mingjun Ren](https://me.sjtu.edu.cn/teacher_directory1/renmingjun.html)     &nbsp;&nbsp;[Boxing Shi](https://ci.idm.pku.edu.cn/People.htm)
 
 
 
