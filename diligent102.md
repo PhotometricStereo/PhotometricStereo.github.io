@@ -7,8 +7,8 @@ show_downloads: true
 
 ![diligent102](./imgs/poster.png)
 <p style="text-align:justify">Evaluating photometric stereo using real-world dataset is important yet difficult. Existing datasets are insufficient due to their limited scale and random distributions in shape and material. This paper presents a new real-world photometric stereo dataset with “ground truth” normal maps, which is 10 times larger than the widely adopted one. More importantly, we propose to control the shape and material variations by fabricating objects from CAD models with carefully selected materials, covering typical aspects of reflectance properties that are distinctive for evaluating photometric stereo methods. By benchmarking recent photometric stereo methods using these 100 sets of images, with a special focus on recent learning based solutions, a 10×10 shape-material error distribution matrix is visualized to depict a “portrait” for each evaluated method. From such comprehensive analysis, open problems in this field are discussed. </p>
-<br><br><br>
-
+<br><br><
+<>evalutaion>
 
 # Datatset
 100 objects matrix with 10 shapes-by-10 materials<br>
@@ -26,7 +26,6 @@ show_downloads: true
     <th>Turbine</th>
     <th>Bunny</th>
   </tr>
-    
   <tr>
     <td>Materials</td>
       <td>Pom</td>
@@ -41,20 +40,20 @@ show_downloads: true
       <td>Acylic</td>
   </tr>
 </table>
+<br><br>
 
 
-
-# equipment
+# Equipment
 ![cage](./imgs/equipmentAll.png)
 Out cpature setups.
-<br>
+<br><br>
 
 
-## results
+## Results
 ![heatmap](./imgs/heatmap.png)
 curve map
 heatmap
-<br>
+<br><br>
 
 
 
@@ -62,8 +61,9 @@ heatmap
 ## Files
 - Paper([PDF](./imgs/pdfs/00793.pdf))
 - Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
-- Dataset(<a href="{{1.2.3.4/dataset/xxx.zip}}" class="btn">Download .zip</a>)
-<br/><br/><br/><br/>
+- Dataset([DownLoad.zip](1.2.3.4/dataset/xxx.zip))
+- <font size=3 color=dodgerblue>[Evaluation WebSite](http://120.27.211.155:8501)</font>
+<br/><br/>
 
 
 ## Citations
