@@ -62,7 +62,7 @@ A 10×10 shape-material error distribution matrix is visualized to depict a “p
 
 ## Files
 - Paper([PDF](./imgs/pdfs/00793.pdf))
-- Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
+- Supplementary([PDF](./imgs/pdfs/00793-supp.pdf))
 - Dataset([DownLoad.zip](http://120.27.211.155:8080/DiLiGenT100.zip))
 - [<font color="dodgerblue">Evaluation WebSite</font>](http://120.27.211.155)
 <br/><br/>
