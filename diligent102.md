@@ -28,17 +28,17 @@ show_downloads: true
     <th>Bunny</th>
   </tr>
   <tr>
-    <td>Materials</td>
-      <td>Pom</td>
-      <td>Pp</td>
-      <td>Nylon</td>
-      <td>Pvc</td>
-      <td>Abs</td>
-      <td>Bakelite</td>
-      <td>Al</td>
-      <td>Cu</td>
-      <td>Steel</td>
-      <td>Acylic</td>
+      <th>Materials</td>
+      <th>Pom</td>
+      <th>Pp</td>
+      <th>Nylon</td>
+      <th>Pvc</td>
+      <th>Abs</td>
+      <th>Bakelite</td>
+      <th>Al</td>
+      <th>Cu</td>
+      <th>Steel</td>
+      <th>Acylic</td>
   </tr>
 </table>
 <br><br>
