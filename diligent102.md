@@ -1,14 +1,14 @@
 ---
 layout: default
 title: DiLiGent10<sub>2</sub>$
-description: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation <br>
-[Jieji Ren](), [FeiShi Wang](), [Jiahao Zhang](), [Qian Zheng](), [Mingjun Ren](), [Boxing Shi]()
+description: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation
 show_downloads: true
 ---
 # Datatset
 ![diligent102](./imgs/poster.png)
 Evaluating photometric stereo using real-world dataset is important yet difficult. Existing datasets are insufficient due to their limited scale and random distributions in shape and material. This paper presents a new real-world photometric stereo dataset with “ground truth” normal maps, which is 10 times larger than the widely adopted one. More importantly, we propose to control the shape and material variations by fabricating objects from CAD models with carefully selected materials, covering typical aspects of reflectance properties that are distinctive for evaluating photometric stereo methods. By benchmarking recent photometric stereo methods using these 100 sets of images, with a special focus on recent learning based solutions, a 10×10 shape-material error distribution matrix is visualized to depict a “portrait” for each evaluated method. From such comprehensive analysis, open problems in this field are discussed. 
 <br><br><br>
+
 
 
 ## equipment
@@ -49,6 +49,8 @@ _yay_
 
 
 
+## Authors
+[Jieji Ren](), [FeiShi Wang](), [Jiahao Zhang](), [Qian Zheng](), [Mingjun Ren](), [Boxing Shi]()
 
 
 
