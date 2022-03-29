@@ -1,20 +1,58 @@
 ---
 layout: default
-title: DiLiGent$10^2$
-description: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation
+title: DiLiGent10<sub>2</sub>$
+description: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation <br>
+[Jieji Ren](), [FeiShi Wang](), [Jiahao Zhang](), [Qian Zheng](), [Mingjun Ren](), [Boxing Shi]()
 show_downloads: true
 ---
 # Datatset
-![all object](./imgs/)
+![diligent102](./imgs/poster.png)
+Evaluating photometric stereo using real-world dataset is important yet difficult. Existing datasets are insufficient due to their limited scale and random distributions in shape and material. This paper presents a new real-world photometric stereo dataset with “ground truth” normal maps, which is 10 times larger than the widely adopted one. More importantly, we propose to control the shape and material variations by fabricating objects from CAD models with carefully selected materials, covering typical aspects of reflectance properties that are distinctive for evaluating photometric stereo methods. By benchmarking recent photometric stereo methods using these 100 sets of images, with a special focus on recent learning based solutions, a 10×10 shape-material error distribution matrix is visualized to depict a “portrait” for each evaluated method. From such comprehensive analysis, open problems in this field are discussed. 
+<br><br><br>
+
 
 ## equipment
 the cage
 ![cage](./imgs/)
+<br>
+
 
 ## results
 curve 
 heatmap
-
+<br>
 _yay_
 
-[back](./)
+
+
+## Files
+*Paper([PDF](./imgs/pdfs/00793.pdf)
+*Supplement([PDF](./imgs/pdfs/00793-supp.pdf))
+*Dataset <a href="{{1.2.3.4/dataset/xxx.zip}}" class="btn">Download .zip</a> 
+*([Datset.zip](1.2.3.4/dataset/xxx.zip))
+<br/><br/><br/><br/>
+
+
+## Citations
+```bib
+@InProceedings{Ren_2021_CVPR,
+    author    = {Ren, Jieji and Wang, Feishi and Zhang, Jiahaoand Zheng, Qian and Ren Mingjun and Shi, Boxin},
+    title     = {DiLiGenT102: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {0000-0000}
+}
+
+```
+<br><br>
+
+
+
+
+
+
+[back to Main Page](./)
+
+
+
