@@ -1,0 +1,244 @@
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DiLiGent102</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="./src/icon.png">
+    <link rel="stylesheet" href="./src/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/codemirror.min.css">
+    <link rel="stylesheet" href="./src/app.css">
+    <link rel="stylesheet" href="./src/bootstrap.min(1).css">
+
+    <!-- <script type="text/javascript" async="" src="./src/analytics.js"></script>
+    <script type="text/javascript" async="" src="./src/analytics(1).js"></script>
+    <script async="" src="./src/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110862391-3');
+    </script> -->
+
+    <!-- <script src="./src/jquery.min.js"></script>
+    <script src="./src/bootstrap.min.js"></script>
+    <script src="./src/codemirror.min.js"></script>
+    <script src="./src/clipboard.min.js"></script>
+
+    <script src="./src/app.js"></script> -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                DiLiGent10<sup>2</sup> A Photometric Stereo Benchmark Dataset </br>
+                with Controlled Shape and Material Variation
+            <br /><br />
+            <small>
+                CVPR 2022 (<b>Poster presentation</b>)
+            </small>
+            <br /><br />
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://photometricstereo.github.io/diligent102.html">
+                          Jieji Ren
+                        </a><sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://photometricstereo.github.io/diligent102.html">
+                          Feishi Wang
+                        </a><sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://photometricstereo.github.io/diligent102.html">
+                          Jiahao Zhang
+                        </a><sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://q-zh.github.io">
+                          Qian Zheng
+                        </a><sup>3</sup>
+                    </li>
+                    <li>
+                        <a href="https://me.sjtu.edu.cn/teacher_directory1/renmingjun.html">
+                          Mingjun Ren
+                        </a><sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://ci.idm.pku.edu.cn/People.htm">
+                          Boxin Shi
+                        </a><sup>2,4,5</sup>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <sup>1</sup>School of Mechanical Engineering, Shanghai Jiao Tong University
+                    </li>
+                    <li>
+                        <sup>2</sup>National Engineering Research Center of Visual Technology, School of Computer Science, Peking University
+                    </li>
+                    <li>
+                        <sup>3</sup>College of Computer Science and Technology, Zhejiang University
+                    </li>                    
+                    <li>
+                        <sup>4</sup>Institute for Artificial Intelligence, Peking University
+                    </li>                    
+                    <li>
+                        <sup>5</sup>Beijing Academy of Artificial Intelligence
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://photometricstereo.github.io/imgs/pdfs/00793.pdf">
+                            <img src="./imgs/diligent102/paperface_v0.1.png" height="120px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://photometricstereo.github.io/imgs/pdfs/00793-supp.pdf">
+                            <img src="./imgs/diligent102/suppface_v0.1.png" height="120px"><br>
+                                <h4><strong>Supplementary</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="./imgs/diligent102/eval.png" height="120px"><br>
+                                <h4><strong>Evaluation</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="./imgs/diligent102/datalogo.png" height="120px"><br>
+                                <h4><strong>Dataset</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
+                <img src="./imgs/diligent102/dataset_v0.1.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Evaluating photometric stereo using real-world dataset is important yet difficult. Existing datasets are insufficient due to their limited scale and random distributions in shape and material. This paper presents a new real-world photometric stereo dataset with "ground truth" normal maps, which is 10 times larger than the widely adopted one. More importantly, we propose to control the shape and material variations by fabricating objects from CAD models with carefully selected materials, covering typical aspects of reflectance properties that are distinctive for evaluating photometric stereo methods. By benchmarking recent photometric stereo methods using these 100 sets of images, with a special focus on recent learning based solutions, a 10×10 shape-material error distribution matrix is visualized to depict a "portrait" for each evaluated method. From such comprehensive analysis, open problems in this field are discussed.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Highlights
+                </h3>
+                <p class="text-justify">
+                    <ul>
+                        <li>
+                            The largest public PS dataset with 100 sets of images with "ground truth" normal; 
+                        </li>
+                        <li>
+                            Shape and Material controlled variation from simpleness to complexness. 
+                        </li>
+                        <li>
+                            Developing a omnidirectional and single illumination system for image capture.
+                        </li>
+                        <li>
+                            Benchmarking and comparing classic and learning based PS methods systematically.
+                        </li>
+
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Technical Details
+                </h3>
+                <img src="./imgs/diligent102/equipment_v0.1.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Lighting and imaging setup for building the DiLiGenT102 dataset. A cage is built and covered with black-out cloth to act as a darkroom. Camera is mounted on the zenith of the cage. An LED light source is mounted on a two-axes stage, and the target object is placed at the rotation center. Six specular balls are placed around the target object to calculate the lighting direction.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    "Portrait" for PS Methods
+                </h3>
+                <img src="./imgs/diligent102/heatmap_v0.1.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    A 10*10 shape-material error distribution matrix is visualized to depict a "portrait" for each evaluated method. 
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citataion
+                </h3>
+                <p style="border-style: groove;border-width: 1px;border-color: lightgrey;">
+                    &nbsp;@InProceedings{Ren_2022_CVPR,</br>
+                        &nbsp;author = {Ren, Jieji and Wang, Feishi and Zhang, Jiahaoand Zheng, Qian and Ren Mingjun and Shi, Boxin},</br>
+                        &nbsp;title = {DiLiGenT102: A Photometric Stereo Benchmark Dataset with Controlled Shape and Material Variation},</br>
+                        &nbsp;booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},</br>
+                    &nbsp;month = {June},</br>
+                    &nbsp;year = {2022},</br>
+                    &nbsp;pages = {0000-0000}}   
+                </p>
+    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Contact
+                </h3>
+                <p class='text-justify'>Any Questions and further discussion, pleas send e-mail to <a>shiboxin@pku.edu.cn</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgments
+                </h3>
+                We acknowledge support from National Natural Science Foundation of China and computation resource from openbayes.com. The website template was borrowed from <a href="https://vilab-ucsd.github.io/ucsd-openrooms/">OpenRooms</a>.
+                <p></p>
+            </div>
+        </div>
+    
+    </div>
+
+
+</body></html>
