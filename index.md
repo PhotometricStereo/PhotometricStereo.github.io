@@ -27,4 +27,3 @@ We extend single-view dataset to the multi-view edition as ‘DiLiGenT-MV’. Th
 <br>
 
 --- 
-Contact: `shiboxin@pku.edu.cn`
