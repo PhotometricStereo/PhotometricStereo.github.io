@@ -2,5 +2,5 @@
 
 
 ### Support or Contact
-Any question or dicussion, please feel free to send email: [jiejire@sjtu.edu.cn](jiejiren@sjtu.edu.cn)
+Any question or dicussion, please feel free to send email: [jiejire@sjtu.edu.cn](jiejiren(AT)sjtu(DOT)edu(DOT)cn)
 
