@@ -165,7 +165,7 @@
                             Complex geometric surface and diverse materials are designed.
                         </li>
                         <li>
-                            A lightweight image capture system are developed for small objects observation with omnidirectional and single illumination.
+                            A lightweight capture system are developed for small objects observation with omnidirectional and single illumination.
                         </li>
                         <li>
                             Evaluating details recovery performance of PS methods and identifing new open problems.
@@ -177,13 +177,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Dateset Capture Setup and `Ground Truth` Generate Process
+                    Dateset Capture Setup and `GT` Generate Process
                 </h3>
-                <img src="./imgs/diligentpi/gtprocesss.png" class="img-responsive" alt="overview"><img src="./imgs/diligentpi/gt" class="img-responsive" alt="overview"><br>
-                <br>
-                
+                <img src="./imgs/diligentpi/gtprocesss.png" class="img-responsive" alt="captureimg"><br>           
                 <p class="text-justify">
-                    Lightweight illumination and imaging setup for capture the DiLiGenT-Pi dataset. The system is consist of two-axes rotation stage and LED for omnidirectional illumination, mirrow balls for light direction calibration, camera for image capturing, and black felt board coverd cage acts as darkroom. We take Alicona to measure the accurate surface point cloud of objects, and take the Blender to register point cloud with observed image, finally rendering the surface normal map as `ground truth`.
+                    Lightweight illumination and imaging setup for capture the DiLiGenT-Pi dataset. The system is consist of two-axes rotation stage and LED for omnidirectional illumination, mirrow balls for light direction calibration, camera for image capturing, and black felt board coverd cage acts as darkroom. We take <a href="https://www.alicona.com/en/products/infinitefocus">Alicona</a> to measure the accurate surface point cloud of objects, and take the <a href="https://www.blender.org/">Blender</a> to register point cloud with observed image, finally rendering the surface normal map as `ground truth`.
                 </p>
             </div>
         </div>
@@ -192,7 +190,7 @@
                 <h3>
                     Benchmark Results
                 </h3>
-                <img src="./imgs/diligentpi/benchmark.png" class="img-responsive" alt="overview"><br>
+                <img src="./imgs/diligentpi/benchmark.png" class="img-responsive" alt="benchmark"><br>
                 <p class="text-justify">
                     A 15*30 algo-obj error distribution matrix is visualized to depict the recovery perfoemance of each PS method. 
                 </p>
@@ -203,11 +201,11 @@
                 <h3>
                     Reconvery Performance on Selected Methods
                 </h3>
-                <img src="./imgs/diligentpi/compare.png" class="img-responsive" alt="overview"><br>
+                <img src="./imgs/diligentpi/compare.png" class="img-responsive" alt="compare"><br>
                 <p class="text-justify">
                     Visualization of surface detail recovery from different photometric stereo methods. Per-pixel based photometric stereo method is more effective on detail recovery compared to all-pixel based method.
                 </p>
-                <img src="./imgs/diligentpi/compups.png" class="img-responsive" alt="overview"><br>
+                <img src="./imgs/diligentpi/compups.png" class="img-responsive" alt="compareups"><br>
                 <p class="text-justify">
                     Surface normal estimates of photometric stereo methods with (top row) or without (bottom row) finetuning on PS_RELIEF. Compared to calibrated method, learning-based uncalibrated photometric stereo are heavily influenced by the shape prior learned from the training dataset.
                 </p>               
@@ -240,7 +238,7 @@
                 <h3>
                     Contact
                 </h3>
-                <p class='text-justify'>Any questions and further discussion, please send e-mail to <a>wangfeishi_AT_pku_DOT_edu_DOT_cn</a>.
+                <p class='text-justify'>Any questions and further discussion, please send e-mail to:<br> <a>wangfeishi_AT_pku_DOT_edu_DOT_cn</a>.
                 </p>
             </div>
         </div>
