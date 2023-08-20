@@ -11,8 +11,8 @@ We proposed datasets to benchmark photometric stereos (PS) methods.
 <br><br>
 
 
-## [DiLiGenT-Pi](./diligent102.html)
-DiLiGenT- $\Pi$ Dataset contains 30 near-planar and rich-detail objects with 4 group materials combinations. Precise details are measured and diverse materials are designed to evaluate the shape details recover performance of PS methods.<br>
+## [DiLiGenT-Pi](./diligentpi.html)
+DiLiGenT-Pi Dataset contains 30 near-planar and rich-detail objects with 4 group materials combinations. Precise details are measured and diverse materials are designed to evaluate the shape details recover performance of PS methods.<br>
 ![dataset0.3](./imgs/diligentpi/dataset_v0.3.png)
 <br><br>
 
