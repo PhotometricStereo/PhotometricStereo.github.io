@@ -148,9 +148,9 @@
                 <h3>
                     Overview
                 </h3>
-                <img src="./imgs/diligentpi/piw.png" class="img-responsive" alt="overview"><br>
+                <img src="./imgs/diligentrt/RTface.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-                    Photometric stereo faces challenges from non-Lambertian reflectance in real-world scenarios. Systematically measuring the reliability of photometric stereo methods in handling such complex reflectance necessitates a real-world dataset with quantitatively controlled reflectances. This paper introduces DiLiGenRT, the first real-world dataset for evaluating photometric stereo methods under quantified reflectances by manufacturing 54 hemispheres with varying degrees of two reflectance properties: Roughness and Translucency. Unlike qualitative and semantic labels, such as diffuse and specular, that have been used in previous datasets, our quantified dataset allows comprehensive and systematic benchmark evaluations. In addition, it facilitates selecting best-fit photometric stereo methods based on the quantitative reflectance properties.                       
+                    Photometric stereo faces challenges from non-Lambertian reflectance in real-world scenarios. Systematically measuring the reliability of photometric stereo methods in handling such complex reflectance necessitates a real-world dataset with quantitatively controlled reflectances. This paper introduces <strong>DiLiGenRT</strong>strong>, the first real-world dataset for evaluating photometric stereo methods under quantified reflectances by manufacturing 54 hemispheres with varying degrees of two reflectance properties: <strong>R</strong>strong>oughness and <strong>T</strong>strong>ranslucency. Unlike qualitative and semantic labels, such as diffuse and specular, that have been used in previous datasets, our quantified dataset allows comprehensive and systematic benchmark evaluations. In addition, it facilitates selecting best-fit photometric stereo methods based on the quantitative reflectance properties.                       
                 </p>
             </div>
         </div>
@@ -163,13 +163,16 @@
                 <p class="text-justify">
                     <ul>
                         <li>
-                            First public near-planar rich-details PS dataset with 30 sets of images with `ground truth` normal; 
+                            First public quantified <strong>R</strong>oughness and <strong>T</strong>ranslucency PS dataset with 54 sets of images with `ground truth` normal; 
                         </li>
                         <li>
-                            Complex geometric surface and diverse materials are designed;
+                            Quantitative controlled surface rougness (9 levels) and intrisic translucency (6 levels) with large span;
                         </li>
                         <li>
-                            A lightweight capture system are developed for small objects observation with omnidirectional illumination;
+                            A simple and stable process is developed to fabricate diverse surface roughness and tranlucency for samples with consistency;
+                        </li>
+                        <li>
+                            A effective translucency measurement appraoch is developed;
                         </li>
                         <li>
                             Evaluating details recovery performance of PS methods and identifing new open problems.
@@ -181,11 +184,12 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Dateset Capture Setup and `GT` Generate Process
+                    Samples Febrication, Dataset Capture Setup and `RT` Measurement Process
                 </h3>
-                <img src="./imgs/diligentpi/gtprocesss.png" class="img-responsive" alt="captureimg"><br>           
+                <img src="./imgs/diligentrt/RTfabricate.png" class="img-responsive" alt="captureimg"><br>
+                <img src="./imgs/diligentrt/RTGT.png" class="img-responsive" alt="captureimg"><br>           
                 <p class="text-justify">
-                    Lightweight illumination and imaging setup for capture the DiLiGenT-Pi dataset. The system is consist of two-axes rotation stage and LED for omnidirectional illumination, mirrow balls for light direction calibration, camera for image capturing, and black felt board coverd cage acts as darkroom. We take <a href="https://www.alicona.com/en/products/infinitefocus">Alicona</a> to measure the accurate surface point cloud of objects, and take the <a href="https://www.blender.org/">Blender</a> to register point cloud with observed image, finally rendering the surface normal map as `ground truth`.
+                    We manufacturing multiple molds with same size, and sandblasting and polish them with differen grit # (the size of granularity) to obtain diverse surface rougness. For translucecy, we mix different concentrations of pigment into silica gel to casting the molds to obtain hemi-spheres. We also take the lightweight illumination and imaging setup for capture the DiLiGenT-RT dataset. We take <a href="https://www.zygo.com/products/metrology-systems/3d-optical-profilers/nexview-nx2">zygo nexView<sup>TM</sup> NX2</a> to measure the accurate surface roughness of objects, and build a customerized equipment to measurement the translucency of objects. 
                 </p>
             </div>
         </div>
@@ -194,25 +198,26 @@
                 <h3>
                     Benchmark Results
                 </h3>
-                <img src="./imgs/diligentpi/benchmark_new.png" class="img-responsive" alt="benchmark"><br>
+                <img src="./imgs/diligentrt/RT_heatmap" class="img-responsive" alt="benchmark"><br>
                 <p class="text-justify">
-                    A 15*30 algo-obj error distribution matrix is visualized to depict the recovery perfoemance of each PS method. 
+                    12 typical algorithms are evaluated on proposed DiLiGenTRT, and their error distribution matrix is visualized. 
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Reconvery Performance on Selected Methods
+                    Performance Analysis
                 </h3>
-                <img src="./imgs/diligentpi/compare.png" class="img-responsive" alt="compare"><br>
+                <img src="./imgs/diligentrt/RT_corner" class="img-responsive" alt="compareups"><br>
                 <p class="text-justify">
-                    Visualization of surface detail recovery from different photometric stereo methods. Per-pixel based photometric stereo method is more effective on detail recovery compared to all-pixel based method.
+                    Visualization of estimated surface normals for hemisphere objects at the four corners of the translucency-roughness (top-left:most rough and least translucent, top-right: least rough and least translucent, bottom-left: most rough and most translucent, bottom-right: least rough and most translucent), which directly demonstrate the influence of roughness of translucency on surface normal estimation.
+                </p>  
+                <img src="./imgs/diligentrt/RT_light" class="img-responsive" alt="compare"><br>
+                <p class="text-justify">
+                    Benchmark evaluation on DiLiGenRT under sparse and dense lights (#10 and #100), which records the best-performing algorithms on each roughness-translucency sample (MAE/name annotated in the heatmap block), and the change on the number of lights.
                 </p>
-                <img src="./imgs/diligentpi/compups.png" class="img-responsive" alt="compareups"><br>
-                <p class="text-justify">
-                    Surface normal estimates of photometric stereo methods with (top row) or without (bottom row) finetuning on PS_RELIEF. Compared to calibrated method, learning-based uncalibrated photometric stereo are heavily influenced by the shape prior learned from the training dataset.
-                </p>               
+             
             </div>
         </div>
 
@@ -224,7 +229,7 @@
                     Citataion
                 </h3>
                 <p style="border-style: groove;border-width: 1px;border-color: lightgrey;color:grey;">
-                    &nbsp;@InProceedings{Wang_Ren_Guo_2023_ICCV,</br>
+                    &nbsp;@InProceedings{Guo_Ren_Wang_2024_CVPR,</br>
                         &nbsp;author = {Guo, Heng and Ren, Jieji and Wang, Feishi and Ren, Mingjun and Shi, Boxin and Yasuyuki, Matsushita},</br>
                         &nbsp;title = {DiLiGenRT: A Photometric Stereo Dataset with Quantifed Roughness and Translucency},</br>
                         &nbsp;booktitle = {Proceedings of the IEEE/CVF Computer Vision and Pattern Recongnition (CVPR)},</br>
