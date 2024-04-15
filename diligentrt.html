@@ -150,7 +150,7 @@
                 </h3>
                 <img src="./imgs/diligentrt/RTface.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-                    Photometric stereo faces challenges from non-Lambertian reflectance in real-world scenarios. Systematically measuring the reliability of photometric stereo methods in handling such complex reflectance necessitates a real-world dataset with quantitatively controlled reflectances. This paper introduces <strong>DiLiGenRT</strong>strong>, the first real-world dataset for evaluating photometric stereo methods under quantified reflectances by manufacturing 54 hemispheres with varying degrees of two reflectance properties: <strong>R</strong>strong>oughness and <strong>T</strong>strong>ranslucency. Unlike qualitative and semantic labels, such as diffuse and specular, that have been used in previous datasets, our quantified dataset allows comprehensive and systematic benchmark evaluations. In addition, it facilitates selecting best-fit photometric stereo methods based on the quantitative reflectance properties.                       
+                    Photometric stereo faces challenges from non-Lambertian reflectance in real-world scenarios. Systematically measuring the reliability of photometric stereo methods in handling such complex reflectance necessitates a real-world dataset with quantitatively controlled reflectances. This paper introduces <strong>DiLiGenRT</strong>, the first real-world dataset for evaluating photometric stereo methods under quantified reflectances by manufacturing 54 hemispheres with varying degrees of two reflectance properties: <strong>R</strong>oughness and <strong>T</strong>ranslucency. Unlike qualitative and semantic labels, such as diffuse and specular, that have been used in previous datasets, our quantified dataset allows comprehensive and systematic benchmark evaluations. In addition, it facilitates selecting best-fit photometric stereo methods based on the quantitative reflectance properties.                       
                 </p>
             </div>
         </div>
@@ -184,10 +184,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Samples Febrication, Dataset Capture Setup and `RT` Measurement Process
+                    Febrication, Capture and `RT` Measurement
                 </h3>
                 <img src="./imgs/diligentrt/RTfabricate.png" class="img-responsive" alt="captureimg"><br>
-                <img src="./imgs/diligentrt/RTGT.png" class="img-responsive" alt="captureimg"><br>           
+                <img src="./imgs/diligentrt/RTGT.png" class="img-responsive" alt="captureimg"><br>         
                 <p class="text-justify">
                     We manufacturing multiple molds with same size, and sandblasting and polish them with differen grit # (the size of granularity) to obtain diverse surface rougness. For translucecy, we mix different concentrations of pigment into silica gel to casting the molds to obtain hemi-spheres. We also take the lightweight illumination and imaging setup for capture the DiLiGenT-RT dataset. We take <a href="https://www.zygo.com/products/metrology-systems/3d-optical-profilers/nexview-nx2">zygo nexView<sup>TM</sup> NX2</a> to measure the accurate surface roughness of objects, and build a customerized equipment to measurement the translucency of objects. 
                 </p>
@@ -198,9 +198,9 @@
                 <h3>
                     Benchmark Results
                 </h3>
-                <img src="./imgs/diligentrt/RT_heatmap" class="img-responsive" alt="benchmark"><br>
+                <img src="./imgs/diligentrt/RT_heatmap.png" class="img-responsive" alt="benchmark"><br>
                 <p class="text-justify">
-                    12 typical algorithms are evaluated on proposed DiLiGenTRT, and their error distribution matrix is visualized. 
+                    12 typical algorithms are evaluated on proposed DiLiGenTRT, and their error distribution matrix is visualized. More rough and less translucent samples show small reconstruction error (same as common sense).
                 </p>
             </div>
         </div>
@@ -209,11 +209,11 @@
                 <h3>
                     Performance Analysis
                 </h3>
-                <img src="./imgs/diligentrt/RT_corner" class="img-responsive" alt="compareups"><br>
+                <img src="./imgs/diligentrt/RT_corner.png" class="img-responsive" alt="compareups"><br>
                 <p class="text-justify">
                     Visualization of estimated surface normals for hemisphere objects at the four corners of the translucency-roughness (top-left:most rough and least translucent, top-right: least rough and least translucent, bottom-left: most rough and most translucent, bottom-right: least rough and most translucent), which directly demonstrate the influence of roughness of translucency on surface normal estimation.
                 </p>  
-                <img src="./imgs/diligentrt/RT_light" class="img-responsive" alt="compare"><br>
+                <img src="./imgs/diligentrt/RT_light.png" class="img-responsive" alt="compare"><br>
                 <p class="text-justify">
                     Benchmark evaluation on DiLiGenRT under sparse and dense lights (#10 and #100), which records the best-performing algorithms on each roughness-translucency sample (MAE/name annotated in the heatmap block), and the change on the number of lights.
                 </p>
