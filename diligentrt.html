@@ -2,7 +2,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>DiLiGentRT</title>
+    <title>DiLiGenRT</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,7 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                DiLiGent-RT: A Photometric Stereo Dataset with Quantified</br>
+                DiLiGenRT: A Photometric Stereo Dataset with Quantified</br>
                 Roughness and Translucency
             <br /><br />
             <small>
@@ -163,19 +163,13 @@
                 <p class="text-justify">
                     <ul>
                         <li>
-                            First public quantified <strong>R</strong>oughness and <strong>T</strong>ranslucency PS dataset with 54 sets of images with `ground truth` normal; 
+                            First public PS dataset with quantified <strong>R</strong>oughness (9 levels) and <strong>T</strong>ranslucency (6 levels); 
                         </li>
                         <li>
-                            Quantitative controlled surface rougness (9 levels) and intrisic translucency (6 levels) with large span;
+                            A simple and stable process for fabricating surfaces with controlled roughness and tranlucency;
                         </li>
                         <li>
-                            A simple and stable process is developed to fabricate diverse surface roughness and tranlucency for samples with consistency;
-                        </li>
-                        <li>
-                            A effective translucency measurement appraoch is developed;
-                        </li>
-                        <li>
-                            Evaluating details recovery performance of PS methods and identifing new open problems.
+                            First quantitative work space of photometric stereo w.r.t reflectance.
                         </li>
                     </ul>
                 </p>
@@ -189,6 +183,7 @@
                 <img src="./imgs/diligentrt/RTfabricate.png" class="img-responsive" alt="captureimg"><br>
                 <img src="./imgs/diligentrt/RTGT.png" class="img-responsive" alt="captureimg"><br>         
                 <p class="text-justify">
+                    <!--(<strong>Left</strong>) Objects in DiLiGenRT are constructed by first manufacturing molds with varying degrees of roughness through sandblasting and then injecting solutions of different concentrations into the molds, followed by solidifying and de-molding. (<strong>Right</strong>) Images in DiLiGenRT are captured by moving a point light source bundled on a robot arm.-->
                     We manufacturing multiple molds with same size, and sandblasting and polish them with differen grit # (the size of granularity) to obtain diverse surface rougness. For translucecy, we mix different concentrations of pigment into silica gel to casting the molds to obtain hemi-spheres. We also take the lightweight illumination and imaging setup for capture the DiLiGenT-RT dataset. We take <a href="https://www.zygo.com/products/metrology-systems/3d-optical-profilers/nexview-nx2">zygo nexView<sup>TM</sup> NX2</a> to measure the accurate surface roughness of objects, and build a customerized equipment to measurement the translucency of objects. 
                 </p>
             </div>
@@ -200,7 +195,7 @@
                 </h3>
                 <img src="./imgs/diligentrt/RT_heatmap.png" class="img-responsive" alt="benchmark"><br>
                 <p class="text-justify">
-                    12 typical algorithms are evaluated on proposed DiLiGenTRT, and their error distribution matrix is visualized. More rough and less translucent samples show small reconstruction error (same as common sense).
+                    Roughness-translucency MAE matrices for non-learning-based (top) and learning-based (bottom) photometric stereo methods, showing their performance profiles under different levels of reflectance properties. The mean and median of the MAE matrix are presented near the method name. The ticks of row and column are σt and Sa. Reducing σt corresponds to increasing translucency, while lowering Sa is associated with decreased roughness.
                 </p>
             </div>
         </div>
@@ -215,7 +210,7 @@
                 </p>  
                 <img src="./imgs/diligentrt/RT_light.png" class="img-responsive" alt="compare"><br>
                 <p class="text-justify">
-                    Benchmark evaluation on DiLiGenRT under sparse and dense lights (#10 and #100), which records the best-performing algorithms on each roughness-translucency sample (MAE/name annotated in the heatmap block), and the change on the number of lights.
+                    PS work space based on DiLiGenRT under sparse and dense lights (#10 and #100). Each cell records the best-performing algorithms on each roughness-translucency sample (MAE/name annotated in the heatmap block).
                 </p>
              
             </div>
