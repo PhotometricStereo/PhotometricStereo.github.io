@@ -10,8 +10,8 @@ layout: home
 We proposed datasets to benchmark photometric stereos (PS) methods.
 <br><br>
 
-## [DiLiGenT-RT](./diligentrt.html)
-DiLiGenT-RT Dataset contains 54 objects with controlled surface roughness and structure translucency. Precise roughness and translucency are measured, fabrication process is designed and the recover performance variation of PS methods are benchmarked.<br>
+## [DiLiGenRT](./diligentrt.html)
+DiLiGenRT Dataset contains 54 objects with controlled surface roughness and structure translucency. Precise roughness and translucency are measured, fabrication process is designed and the recover performance variation of PS methods are benchmarked.<br>
 ![dataset0.4](./imgs/diligentrt/RTface.png)
 <br><br>
 
